@@ -4,6 +4,6 @@
     export let text;
 </script>
 
-<div class={$page.url.pathname === link ? "bg-slate-500" : ""}>
+<div class={$page.url.pathname === link ? "bg-cyan-200" : ""}>
     <a href={link}>{text}</a>
 </div>

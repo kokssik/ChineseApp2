@@ -20,6 +20,7 @@
         character={row.symbol}
         pronunciation={row.pronounciation}
         meaning={row.meaning}
-        strokeOrderImg={row.image}
+        word1={row.word1}
+        word2={row.word2}
     />
 {/each}
