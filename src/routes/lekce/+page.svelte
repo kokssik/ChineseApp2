@@ -1,51 +1,49 @@
 <script>
   import List from "$lib/components/HanziCard.svelte";
+  import Seznam from "$lib/components/Seznam.svelte";
 </script>
 
-<div class="text-column">
-  <h1>Seznam lekcí:</h1>
+<div>
+  <h1 class="text-center font-sans">Seznam lekcí:</h1>
 
-  <ul class="list-disc">
-    <li>
-      <a href="/lekce/lekce69">Lekce 1</a>
-      <ul class="list-disc list-inside pl-6">
-        <li>Výslovnost a přepis čínštiny</li>
-        <li>Pinyin</li>
-        <li>Český Pchin-jin</li>
-      </ul>
-    </li>
-
-    <li>
-      <a href="/lekce/lekce420">Lekce 2</a>
-      <ul class="list-disc list-inside pl-6">
-        <li>Základní větná stavba</li>
-        <li>Pořadí slov ve větě</li>
-        <li>Jednoduchá věta</li>
-      </ul>
-    </li>
-
-    <li>
-      <a href="/lekce/3">Lekce 3</a>
-      <ul class="list-disc list-inside pl-6">
-        <li>Sloveso být</li>
-        <li>Shi</li>
-      </ul>
-    </li>
-
-    <li>
-      <a href="/lekce/4">Lekce 4</a>
-      <ul class="list-disc list-inside pl-6">
-        <li>"Velmi, příliš"</li>
-        <li>tai</li>
-      </ul>
-    </li>
-
-    <li>
-      <a href="">Lekce 5</a>
-      <ul class="list-disc list-inside pl-6">
-        <li>Používání přídavných jmen</li>
-        <li>Jednoduché věty s přídavnými jmény</li>
-      </ul>
-    </li>
-  </ul>
+  <Seznam
+    nadpis="Lekce 1"
+    odkaz="/lekce/69"
+    sub1="Výslovnost a přepis čínštiny"
+    sub2="Pinyin"
+    sub3="Český Pchin-jin"
+    sub4=""
+  />
+  <Seznam
+    nadpis="Lekce 2"
+    odkaz="/lekce/69"
+    sub1="Základní větná stavba"
+    sub2="Pořadí slov ve větě"
+    sub3="Jednoduchá věta"
+    sub4=""
+  />
+  <Seznam
+    nadpis="Lekce 3"
+    odkaz="/lekce/69"
+    sub1="Sloveso být"
+    sub2="Shi"
+    sub3=""
+    sub4=""
+  />
+  <Seznam
+    nadpis="Lekce 4"
+    odkaz="/lekce/69"
+    sub1="'Velmi, příliš'"
+    sub2="tai"
+    sub3=""
+    sub4=""
+  />
+  <Seznam
+    nadpis="Lekce 5"
+    odkaz="/lekce/69"
+    sub1="Používání přídavných jmen"
+    sub2="Jednoduché věty s přídavnými jmény"
+    sub3=""
+    sub4=""
+  />
 </div>

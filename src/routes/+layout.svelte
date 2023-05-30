@@ -15,3 +15,23 @@
 </div>
 
 <slot />
+
+<!-- <style>
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style> -->
