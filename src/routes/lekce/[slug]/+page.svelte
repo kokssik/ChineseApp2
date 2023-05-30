@@ -51,6 +51,7 @@
   .navbar {
     flex: 1;
     max-width: 200px;
+    padding-top: 100px;
     /*background-color: aquamarine;*/
     /* Add any other styling for the navbar */
   }
@@ -60,6 +61,6 @@
     background-color: #ffffff; /* White background color */
     border: 1px solid #000000; /* Thin border */
     padding: 10px; /* Add padding for content */
-    /* Add any other styling for the content area */
+    margin-top: 100px;
   }
 </style>
