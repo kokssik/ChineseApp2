@@ -22,6 +22,44 @@
   });
 </script>
 
-{id}
+<div class="container">
+  <div class="navbar">
+    <ul>
+      <li><a href="/lekce/1">Lekce 1</a></li>
+      <li><a href="/lekce/2">Lekce 2</a></li>
+      <li><a href="/lekce/3">Lekce 3</a></li>
+      <li><a href="/lekce/4">Lekce 4</a></li>
+    </ul>
+  </div>
 
-{@html parsed}
+  <div class="content">
+    <h1>{id}</h1>
+    <div>{@html parsed}</div>
+  </div>
+
+  <div class="navbar" />
+</div>
+
+<style>
+  .container {
+    background-color: #f3f4f6;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+  }
+
+  .navbar {
+    flex: 1;
+    max-width: 200px;
+    /*background-color: aquamarine;*/
+    /* Add any other styling for the navbar */
+  }
+
+  .content {
+    flex: 1;
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #000000; /* Thin border */
+    padding: 10px; /* Add padding for content */
+    /* Add any other styling for the content area */
+  }
+</style>

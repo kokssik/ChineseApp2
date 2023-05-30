@@ -25,7 +25,7 @@
     </li>
 
     <li>
-      <a href="">Lekce 3</a>
+      <a href="/lekce/3">Lekce 3</a>
       <ul class="list-disc list-inside pl-6">
         <li>Sloveso být</li>
         <li>Shi</li>
@@ -33,7 +33,7 @@
     </li>
 
     <li>
-      <a href="">Lekce 4</a>
+      <a href="/lekce/4">Lekce 4</a>
       <ul class="list-disc list-inside pl-6">
         <li>"Velmi, příliš"</li>
         <li>tai</li>

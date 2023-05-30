@@ -1,14 +1,15 @@
 export default function parseMd(md) {
 
   //ul
-  md = md.replace(/^\s*\n\*/gm, '<ul>\n*');
-  md = md.replace(/^(\*.+)\s*\n([^\*])/gm, '$1\n</ul>\n\n$2');
-  md = md.replace(/^\*(.+)/gm, '<li>$1</li>');
+  md = md.replace(/^\s*\n-/gm, '<ul>\n-');
+  md = md.replace(/^(-.+)\s*\n([^-\s])/gm, '$1\n</ul>\n\n$2');
+  md = md.replace(/^-(.+)/gm, '<li>$1</li>');
 
   //ol
-  md = md.replace(/^\s*\n\d\./gm, '<ol>\n1.');
-  md = md.replace(/^(\d\..+)\s*\n([^\d\.])/gm, '$1\n</ol>\n\n$2');
-  md = md.replace(/^\d\.(.+)/gm, '<li>$1</li>');
+  md = md.replace(/^\s*\n\d+\./gm, '<ol>\n<li>');
+  md = md.replace(/^(\d+\..+)\s*\n([^\d\.])/gm, '$1\n</li>\n</ol>\n\n$2');
+  md = md.replace(/^\d+\.(.+)/gm, '<li>$1</li>');
+
 
   //blockquote
   md = md.replace(/^\>(.+)/gm, '<blockquote>$1</blockquote>');
@@ -42,9 +43,11 @@ export default function parseMd(md) {
 
   //code
   md = md.replace(/[\`]{1}([^\`]+)[\`]{1}/g, '<code>$1</code>');
+  md = md.replace(/```([\s\S]+?)```/g, '<pre class="hljs"><code>$1</code></pre>');
+
 
   //p
-  md = md.replace(/^\s*(\n)?(.+)/gm, function(m) {
+  md = md.replace(/^\s*(\n)?(.+)/gm, function (m) {
     return /\<(\/)?(h\d|ul|ol|li|blockquote|pre|img)/.test(m) ? m : '<p>' + m + '</p>';
   });
 
