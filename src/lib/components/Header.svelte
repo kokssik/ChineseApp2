@@ -3,10 +3,14 @@
     export let links;
 </script>
 
-<div class="flex justify-center drop-shadow-sm">
+<div class="flex justify-center">
     <div class="flex flex-row gap-32">
         {#each links as link}
-            <a href={link.link}>{link.text}</a>
+            <a
+                href={link.link}
+                class="no-underline font-semibold text-lg hover:uppercase"
+                >{link.text}</a
+            >
         {/each}
     </div>
 </div>

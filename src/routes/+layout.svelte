@@ -13,7 +13,6 @@
     { text: "Amogus", link: "/lmao" },
   ]}
 />
-
 <div class="container bg-gradient-to-r from-purple-100 to-white">
   <slot />
 </div>

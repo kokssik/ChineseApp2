@@ -4,7 +4,7 @@
 </script>
 
 <div>
-  <h1 class="text-center font-sans">Seznam lekcí:</h1>
+  <div class="font-sans text-4xl font-bold text-center">Seznam lekcí:</div>
 
   <Seznam
     nadpis="Lekce 1"
