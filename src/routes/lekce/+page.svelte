@@ -9,16 +9,6 @@
   <Seznam
     nadpis="Lekce 1"
     odkaz="/lekce/69"
-    subs={[
-      "jefhjfhgsfhgjksfjghsfkj",
-      "klfnsjdnfjdsnfjsdjfhjsdhfjsdkjfhdskj",
-      "fdkfjdsjkfnjksdnfnsk",
-    ]}
-  />
-
-  <Seznam
-    nadpis="Lekce 1"
-    odkaz="/lekce/69"
     subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
   />
   <Seznam
