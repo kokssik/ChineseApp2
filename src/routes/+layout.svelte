@@ -14,24 +14,13 @@
   </div>
 </div>
 
-<slot />
+<div class="container bg-gradient-to-r from-purple-100 to-white">
+  <slot />
+</div>
 
-<!-- <style>
-  p {
-    font-family: Arial, Helvetica, sans-serif;
+<style>
+  .container {
+    min-width: 100vw;
+    min-height: 100vh;
   }
-
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  h2 {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  a {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  li {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-</style> -->
+</style>

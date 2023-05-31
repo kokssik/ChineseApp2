@@ -22,7 +22,7 @@
   });
 </script>
 
-<div class="container">
+<div class="container bg-gradient-to-r from-purple-100 to-white">
   <div class="navbar">
     <ul>
       <li><a href="/lekce/1">Lekce 1</a></li>
@@ -42,7 +42,6 @@
 
 <style>
   .container {
-    background-color: #f3f4f6;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;

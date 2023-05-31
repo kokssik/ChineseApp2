@@ -9,41 +9,32 @@
   <Seznam
     nadpis="Lekce 1"
     odkaz="/lekce/69"
-    sub1="Výslovnost a přepis čínštiny"
-    sub2="Pinyin"
-    sub3="Český Pchin-jin"
-    sub4=""
+    subs={[
+      "jefhjfhgsfhgjksfjghsfkj",
+      "klfnsjdnfjdsnfjsdjfhjsdhfjsdkjfhdskj",
+      "fdkfjdsjkfnjksdnfnsk",
+    ]}
+  />
+
+  <Seznam
+    nadpis="Lekce 1"
+    odkaz="/lekce/69"
+    subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
   />
   <Seznam
     nadpis="Lekce 2"
     odkaz="/lekce/69"
-    sub1="Základní větná stavba"
-    sub2="Pořadí slov ve větě"
-    sub3="Jednoduchá věta"
-    sub4=""
+    subs={["Základní větná stavba", "Pořadí slov ve větě", "Jednoduchá věta"]}
   />
-  <Seznam
-    nadpis="Lekce 3"
-    odkaz="/lekce/69"
-    sub1="Sloveso být"
-    sub2="Shi"
-    sub3=""
-    sub4=""
-  />
+  <Seznam nadpis="Lekce 3" odkaz="/lekce/69" subs={["Sloveso být", "Shi"]} />
   <Seznam
     nadpis="Lekce 4"
     odkaz="/lekce/69"
-    sub1="'Velmi, příliš'"
-    sub2="tai"
-    sub3=""
-    sub4=""
+    subs={["'Velmi, příliš'", "tai"]}
   />
   <Seznam
     nadpis="Lekce 5"
     odkaz="/lekce/69"
-    sub1="Používání přídavných jmen"
-    sub2="Jednoduché věty s přídavnými jmény"
-    sub3=""
-    sub4=""
+    subs={["Používání přídavných jmen", "Jednoduché věty s přídavnými jmény"]}
   />
 </div>
