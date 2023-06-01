@@ -14,13 +14,15 @@
     });
 </script>
 
-<!-- Creates a <HanziCard/> element for each element in the rows array -->
-{#each rows as row}
-    <HanziCard
-        character={row.symbol}
-        pronunciation={row.pronounciation}
-        meaning={row.meaning}
-        word1={row.word1}
-        word2={row.word2}
-    />
-{/each}
+<!-- Creates a <HanziCard/> element for each element in the rows array -->¨
+<div class="w-2/3 ml-64">
+    {#each rows as row}
+        <HanziCard
+            character={row.symbol}
+            pronunciation={row.pronounciation}
+            meaning={row.meaning}
+            word1={row.word1}
+            word2={row.word2}
+        />
+    {/each}
+</div>

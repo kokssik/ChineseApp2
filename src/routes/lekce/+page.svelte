@@ -8,7 +8,7 @@
 
   <Seznam
     nadpis="Lekce 1"
-    odkaz="/lekce/69"
+    odkaz="/lekce/45"
     subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
   />
   <Seznam

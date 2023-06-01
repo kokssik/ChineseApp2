@@ -18,25 +18,25 @@
     </div>
     <div class="flex-initial w-24">
       <div class="flex flex-col">
-        <div>Výslovnost:</div>
+        <div class="font-bold text-xl">Výslovnost:</div>
         <div>{pronunciation}</div>
       </div>
     </div>
     <div class="flex-auto">
       <div class="flex flex-col">
-        <div>Význam:</div>
+        <div class="font-bold text-xl">Význam:</div>
         <div>{meaning}</div>
       </div>
     </div>
     <div class="flex-auto">
       <div class="flex flex-col">
-        <div>Slovíčka:</div>
+        <div class="font-bold text-xl">Slovíčka:</div>
         <div>{word1}</div>
       </div>
     </div>
     <div class="flex-auto">
       <div class="flex flex-col">
-        <div><br /></div>
+        <div class="font-bold text-xl"><br /></div>
         <div>{word2}</div>
       </div>
     </div>

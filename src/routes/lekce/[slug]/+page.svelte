@@ -23,8 +23,8 @@
 </script>
 
 <div class="container bg-gradient-to-r from-purple-100 to-white">
-  <div class="navbar">
-    <ul>
+  <div class="w-32 pr-5 pl-10 pt-20">
+    <ul class="pl-0">
       <li><a href="/lekce/1">Lekce 1</a></li>
       <li><a href="/lekce/2">Lekce 2</a></li>
       <li><a href="/lekce/3">Lekce 3</a></li>
@@ -32,7 +32,7 @@
     </ul>
   </div>
 
-  <div class="content">
+  <div class="border-2 border-solid p-5 bg-white mt-20 border-black">
     <h1>{id}</h1>
     <div>{@html parsed}</div>
   </div>
@@ -49,17 +49,17 @@
 
   .navbar {
     flex: 1;
-    max-width: 200px;
+    width: 10rem;
     padding-top: 100px;
     /*background-color: aquamarine;*/
     /* Add any other styling for the navbar */
   }
 
-  .content {
+  /* .content {
     flex: 1;
-    background-color: #ffffff; /* White background color */
-    border: 1px solid #000000; /* Thin border */
-    padding: 10px; /* Add padding for content */
+    background-color: #ffffff; 
+    border: 1px solid #000000; 
+    padding: 10px; 
     margin-top: 100px;
-  }
+  } */
 </style>
