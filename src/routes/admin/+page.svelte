@@ -7,26 +7,26 @@
     //Checks if the database exists:
 
     onMount(async () => {
-        //     console.log("Netušíš xD");
-        //     /* The path will be 'src-tauri/test.db', you can customize the path */
+        console.log("Netušíš xD");
+        /* The path will be 'src-tauri/test.db', you can customize the path */
 
         db = await SQLite.open("./hanzi.db");
 
-        //     /* execute SQL */
-        //     const databaseExists = await checkDatabaseExists();
+        /* execute SQL */
 
-        //     if (!databaseExists) {
-        //         await db.execute(`
+        // await db.execute(`
         //     CREATE TABLE hanzi (id TEXT NOT NULL PRIMARY KEY,
         //                          symbol TEXT,
         //                          pronounciation TEXT,
         //                          meaning TEXT,
         //                          image TEXT,
         //                          word1 TEXT,
-        //                          word2 TEXT );
+        //                          word2 TEXT,
+        //                          meaning1 TEXT,
+        //                          meaning2 TEXT );
 
-        //     INSERT INTO hanzi VALUES ('0', '我', 'Wo3', 'Já', 'static/stroke_order/1xd.png', 'xd', 'xd');
-        //     INSERT INTO hanzi VALUES ('1', '是', 'Shi2', 'Být', 'static/stroke_order/1xd.png', 'xd', 'xd');
+        //     INSERT INTO hanzi VALUES ('0', '我', 'Wo3', 'Já', 'static/stroke_order/1xd.png', '我们', '我的', 'My','Moje');
+        //     INSERT INTO hanzi VALUES ('1', '是', 'Shi2', 'Být', 'static/stroke_order/1xd.png', '不是', '但是','Není','Ale');
 
         //     CREATE TABLE lekce (id TEXT NOT NULL PRIMARY KEY,
         //                         markdown TEXT);
@@ -41,7 +41,6 @@
         //                                           text bgdbdgbdbd
         //                                           UwU');
         //    `);
-        //     }
     });
 
     let symbol = "";
@@ -49,10 +48,12 @@
     let meaning = "";
     let word1 = "";
     let word2 = "";
+    let meaning1 = "";
+    let meaning2 = "";
 
     async function submit() {
         await db.execute(
-            "INSERT INTO hanzi VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
+            "INSERT INTO hanzi VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
             [
                 (Math.random() + 1).toString(36).substring(7),
                 symbol,
@@ -61,6 +62,8 @@
                 "static/stroke_order/1xd.png",
                 word1,
                 word2,
+                meaning1,
+                meaning2,
             ]
         );
     }
@@ -94,13 +97,18 @@
             <td><input type="text" bind:value={word1} /></td>
         </tr>
         <tr>
+            <td> <label for="hanzi_insert">Překlad 1:</label></td>
+            <td> <input type="text" bind:value={meaning1} /></td>
+        </tr>
+        <tr>
             <td> <label for="hanzi_insert">Slovo 2:</label></td>
             <td> <input type="text" bind:value={word2} /></td>
         </tr>
         <tr>
-            <td><label for="hanzi_insert">Obrázek:</label></td>
-            <td><input type="file" /></td>
-        </tr><tr>
+            <td> <label for="hanzi_insert">Překlad 2:</label></td>
+            <td> <input type="text" bind:value={meaning2} /></td>
+        </tr>
+        <tr>
             <td> <label for="hanzi_insert">Odeslat</label> </td>
             <td><button on:click={submit}>Odeslat</button></td>
         </tr>

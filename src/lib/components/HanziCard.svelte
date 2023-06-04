@@ -5,6 +5,8 @@
   export let strokeOrderImg: string;
   export let word1: string;
   export let word2: string;
+  export let meaning1: string;
+  export let meaning2: string;
 </script>
 
 <div
@@ -32,12 +34,14 @@
       <div class="flex flex-col">
         <div class="font-bold text-xl">Slovíčka:</div>
         <div>{word1}</div>
+        <div>{meaning1}</div>
       </div>
     </div>
     <div class="flex-auto">
       <div class="flex flex-col">
         <div class="font-bold text-xl"><br /></div>
         <div>{word2}</div>
+        <div>{meaning2}</div>
       </div>
     </div>
   </div>

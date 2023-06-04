@@ -5,7 +5,7 @@
     export let subs;
 </script>
 
-<div class="text-column ml-64">
+<div class="text-column">
     <div class="font-sans leading-relaxed">
         <div class="text-2xl font-bold"><a href={odkaz}>{nadpis}</a></div>
         {#each subs as sub}

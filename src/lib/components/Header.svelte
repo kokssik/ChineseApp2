@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex justify-center">
-    <div class="flex flex-row gap-32">
+    <div class="flex flex-row gap-32 my-1 font-sans">
         {#each links as link}
             <a
                 href={link.link}

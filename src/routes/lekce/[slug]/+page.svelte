@@ -22,8 +22,8 @@
   });
 </script>
 
-<div class="container bg-gradient-to-r from-purple-100 to-white">
-  <div class="w-32 pr-5 pl-10 pt-20">
+<div class="bg-gradient-to-r from-purple-100 to-white flex">
+  <div class="pr-5 pl-10 pt-20 basis-2/12">
     <ul class="pl-0">
       <li><a href="/lekce/1">Lekce 1</a></li>
       <li><a href="/lekce/2">Lekce 2</a></li>
@@ -32,12 +32,12 @@
     </ul>
   </div>
 
-  <div class="border-2 border-solid p-5 bg-white mt-20 border-black">
+  <div class="border-2 border-solid p-5 bg-white mt-20 border-black basis-8/12">
     <h1>{id}</h1>
     <div>{@html parsed}</div>
   </div>
 
-  <div class="navbar" />
+  <div class="pr-5 pl-10 pt-20 basis-2/12" />
 </div>
 
 <style>

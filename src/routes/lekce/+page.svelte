@@ -3,28 +3,30 @@
   import Seznam from "$lib/components/Seznam.svelte";
 </script>
 
-<div>
-  <div class="font-sans text-4xl font-bold text-center">Seznam lekcí:</div>
+<div class="grid justify-center">
+  <div class="">
+    <div class="font-sans text-4xl font-bold">Seznam lekcí:</div>
 
-  <Seznam
-    nadpis="Lekce 1"
-    odkaz="/lekce/45"
-    subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
-  />
-  <Seznam
-    nadpis="Lekce 2"
-    odkaz="/lekce/69"
-    subs={["Základní větná stavba", "Pořadí slov ve větě", "Jednoduchá věta"]}
-  />
-  <Seznam nadpis="Lekce 3" odkaz="/lekce/69" subs={["Sloveso být", "Shi"]} />
-  <Seznam
-    nadpis="Lekce 4"
-    odkaz="/lekce/69"
-    subs={["'Velmi, příliš'", "tai"]}
-  />
-  <Seznam
-    nadpis="Lekce 5"
-    odkaz="/lekce/69"
-    subs={["Používání přídavných jmen", "Jednoduché věty s přídavnými jmény"]}
-  />
+    <Seznam
+      nadpis="Lekce 1"
+      odkaz="/lekce/45"
+      subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
+    />
+    <Seznam
+      nadpis="Lekce 2"
+      odkaz="/lekce/69"
+      subs={["Základní větná stavba", "Pořadí slov ve větě", "Jednoduchá věta"]}
+    />
+    <Seznam nadpis="Lekce 3" odkaz="/lekce/69" subs={["Sloveso být", "Shi"]} />
+    <Seznam
+      nadpis="Lekce 4"
+      odkaz="/lekce/69"
+      subs={["'Velmi, příliš'", "tai"]}
+    />
+    <Seznam
+      nadpis="Lekce 5"
+      odkaz="/lekce/69"
+      subs={["Používání přídavných jmen", "Jednoduché věty s přídavnými jmény"]}
+    />
+  </div>
 </div>
