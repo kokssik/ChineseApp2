@@ -19,7 +19,7 @@
     <Seznam nadpis="Lekce 3" odkaz="/lekce/69" subs={["Sloveso být", "Shi"]} />
     <Seznam
       nadpis="Lekce 4"
-      odkaz="/lekce/69"
+      odkaz="/lekce/5656"
       subs={["'Velmi, příliš'", "tai"]}
     />
     <Seznam
