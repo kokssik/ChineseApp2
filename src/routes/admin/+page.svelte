@@ -3,6 +3,15 @@
     import { onMount } from "svelte";
 
     let db;
+    let symbol = "";
+    let pronounciation = "";
+    let meaning = "";
+    let word1 = "";
+    let word2 = "";
+    let meaning1 = "";
+    let meaning2 = "";
+    let id = "";
+    let markdown = "";
 
     //Checks if the database exists:
 
@@ -43,14 +52,6 @@
         //    `);
     });
 
-    let symbol = "";
-    let pronounciation = "";
-    let meaning = "";
-    let word1 = "";
-    let word2 = "";
-    let meaning1 = "";
-    let meaning2 = "";
-
     async function submit() {
         await db.execute(
             "INSERT INTO hanzi VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)",
@@ -67,9 +68,6 @@
             ]
         );
     }
-
-    let id = "";
-    let markdown = "";
 
     async function submitMarkdown() {
         await db.execute("INSERT INTO lekce VALUES (?1, ?2)", [id, markdown]);

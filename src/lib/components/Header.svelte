@@ -9,8 +9,8 @@
             <a
                 href={link.link}
                 class="no-underline font-semibold text-lg hover:uppercase"
-                >{link.text}</a
-            >
+                >{link.text}
+            </a>
         {/each}
     </div>
 </div>

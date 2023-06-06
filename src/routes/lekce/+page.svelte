@@ -5,8 +5,7 @@
 
 <div class="grid justify-center">
   <div class="">
-    <div class="font-sans text-4xl font-bold">Seznam lekcí:</div>
-
+    <div class="font-sans text-4xl font-bold mb-5">Seznam lekcí:</div>
     <Seznam
       nadpis="Lekce 1"
       odkaz="/lekce/45"
