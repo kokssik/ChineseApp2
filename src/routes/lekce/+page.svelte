@@ -32,8 +32,13 @@
     />
     <Seznam
       nadpis="Lekce 5"
-      odkaz="/lekce/4"
-      subs={["Používání přídavných jmen", "Jednoduché věty s přídavnými jmény"]}
+      odkaz="/lekce/5"
+      subs={["Negace sloves", "Příslovce 不 a 没", "Nemám, nemáš"]}
+    />
+    <Seznam
+      nadpis="Lekce 6"
+      odkaz="/lekce/6"
+      subs={["Spojka a", "Nebo", "和", "还是"]}
     />
   </div>
 </div>
