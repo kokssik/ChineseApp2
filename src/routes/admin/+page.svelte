@@ -67,6 +67,14 @@
                 meaning2,
             ]
         );
+        symbol = "";
+        pronounciation = "";
+        meaning = "";
+        word1 = "";
+        word2 = "";
+        meaning1 = "";
+        meaning2 = "";
+        
     }
 
     async function submitMarkdown() {
