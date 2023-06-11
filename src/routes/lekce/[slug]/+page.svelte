@@ -39,27 +39,3 @@
 
   <div class="pr-5 pl-10 pt-20 basis-2/12" />
 </div>
-
-<style>
-  .container {
-    min-width: 100vw;
-    min-height: 100vh;
-    display: flex;
-  }
-
-  .navbar {
-    flex: 1;
-    width: 10rem;
-    padding-top: 100px;
-    /*background-color: aquamarine;*/
-    /* Add any other styling for the navbar */
-  }
-
-  /* .content {
-    flex: 1;
-    background-color: #ffffff; 
-    border: 1px solid #000000; 
-    padding: 10px; 
-    margin-top: 100px;
-  } */
-</style>

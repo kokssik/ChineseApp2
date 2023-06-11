@@ -8,7 +8,7 @@
     <div class="font-sans text-4xl font-bold mb-5">Seznam lekcí:</div>
     <Seznam
       nadpis="Lekce 1"
-      odkaz="/lekce/45"
+      odkaz="/lekce/5656"
       subs={["Výslovnost a přepis čínštiny", "Pinyin", "Český Pchin-jin"]}
     />
     <Seznam
