@@ -40,5 +40,10 @@
       odkaz="/lekce/6"
       subs={["Spojka a", "Nebo", "和", "还是"]}
     />
+    <Seznam
+      nadpis="Lekce 7"
+      odkaz="/lekce/7"
+      subs={["Co se děje teď", "Vyjádření děje v přítomnosti", "在", "正在"]}
+    />
   </div>
 </div>

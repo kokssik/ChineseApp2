@@ -8,9 +8,7 @@
     { text: "Home", link: "/" },
     { text: "Lekce", link: "/lekce" },
     { text: "Hanzi", link: "/hanzi" },
-    { text: "Stroke order", link: "/" },
     { text: "Admin", link: "/admin" },
-    { text: "Amogus", link: "/lmao" },
   ]}
 />
 <div class="container bg-gradient-to-r from-purple-100 to-white font-sans">
